@@ -1,0 +1,20 @@
+uuid: 994cfdb6-26c1-4731-89f6-975faffd80c7
+langcode: en
+status: true
+dependencies:
+  module:
+    - velir_assessment
+  theme:
+    - olivero
+id: olivero_usermessage
+theme: olivero
+region: content
+weight: 0
+provider: null
+plugin: user_message_block
+settings:
+  id: user_message_block
+  label: 'User Message'
+  label_display: visible
+  provider: velir_assessment
+visibility: {  }
