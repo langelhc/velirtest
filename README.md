@@ -1,0 +1,1 @@
+- Couldn't complete `Create a custom ContentEntityNormalizer class` task.
