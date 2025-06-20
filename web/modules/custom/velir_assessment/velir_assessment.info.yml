@@ -1,0 +1,5 @@
+name: 'Velir Assessment'
+type: module
+description: 'Drupal Assessment'
+package: Custom
+core_version_requirement: ^10 || ^11

@@ -1,0 +1,9 @@
+# services:
+#   velir_assessment.normalizer.node_velir:
+#     class: Drupal\velir_assessment\Normalizer\NodeVelirNormalizer
+#     arguments:
+#       - '@entity_type.manager'
+#       - '@entity_type.repository'
+#       - '@serialization.normalizer.field_item'
+#     tags:
+#       - { name: normalizer, priority: 10 }

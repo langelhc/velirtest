@@ -1,0 +1,35 @@
+velir_assessment.hello:
+  path: '/hello-velir-1'
+  defaults:
+    _controller: '\Drupal\velir_assessment\Controller\HelloController::hello'
+    _title: 'Hello Velir'
+  requirements:
+    # _access: 'TRUE'
+    _permission: 'access content'
+
+velir_assessment.hello_json:
+  path: '/hello-velir-2'
+  defaults:
+    _controller: '\Drupal\velir_assessment\Controller\HelloJsonController::hello'
+    _title: 'Hello Velir JSON'
+  requirements:
+    _access: 'TRUE'
+    # _permission: 'access content'
+  options:
+    _format: 'json'
+
+velir_assessment.settings:
+  path: '/admin/config/system/velir-assessment'
+  defaults:
+    _form: '\Drupal\velir_assessment\Form\VelirAssessmentConfigForm'
+    _title: 'Velir Assessment Settings'
+  requirements:
+    _permission: 'administer site configuration'
+
+velir_assessment.hello_admin:
+  path: '/hello-velir-3'
+  defaults:
+    _controller: '\Drupal\velir_assessment\Controller\HelloAdminController::hello'
+    _title: 'Hello Velir (Administrator Only)'
+  requirements:
+    _role: 'administrator'
